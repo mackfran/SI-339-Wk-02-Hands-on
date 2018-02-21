@@ -1,0 +1,41 @@
+@media only screen and (min-width: 650px){
+	.top-nav {
+		text-align: center;
+	}
+	.top-nav ul li{
+		display: inline-block;
+	}	
+	.top-nav ul li, .menu-icon{
+		border-top: 1px solid #F54320;
+	}
+	.photo-grid {
+		display: inline-block;
+	}
+	.photo-grid #vertical {
+  		float: left;
+  		width: 47.5%;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.top-nav {
+		text-align: right;
+	}
+	.top-nav ul{
+		padding-top: 14px;
+	}
+	.top-nav ul li, .menu-icon{
+		border-top: none;
+	}
+	.logo {
+		float: left;
+	}
+	.photo-cell {
+		display: inline-block;
+		width: 47.5%;
+	}
+	.photo-grid #vertical {
+  		float: left;
+  		width: 23%;
+	}
+}
