@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+html, body, header, footer{
+    background-color: #ECECEA;
+    font-family: 'Open Sans', sans-serif;
+}
+header, footer, .logo {
+	background-color: #14668D;
+	color: #DDDDDA; 
+}
+/*-----HEADER-----*/
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+/*-----NAVIGATION-----*/
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #14668D; 
+	margin: 0;
+	display: inline;
+}
+nav ul li, .menu-icon{
+	border-top: 1px solid #DDDDDA;
+}
+nav ul li a{
+	font-size: 1em;
+	color: #DDDDDA; 
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+/*-----LOGO-----*/
+.logo{
+	background-color: #14668D; 
+	margin: 0;
+	text-align: left;
+	padding: .25em .75em;
+}
+.logo img{
+	height: 3em;
+}
+/*-----HOMEPAGE-----*/
+.main-content-home .home-flag{
+	margin-top: 250px;
+	width: 50%;
+	float: right;
+	display: inline-block;
+	margin-right: 50px;
+}
+.main-content-home img{
+	margin-top: 100px;
+	display: inline-block;
+	width: 20%;
+	float: left;
+	margin-left: 250px;
+}
+/*-----FOOTER-----*/
+footer{
+	color: #F54320;
+	font-size: .85em;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+/*Social Media Icons*/
+.fab, .fas {
+    font-size: 2em;
+    padding: .5em .25em;
+    text-align: justify;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #DDDDDA;
+}
+.fab:hover, .fab:focus, .fas:hover, .fas:focus{
+	color: #E3AD02;
+}
