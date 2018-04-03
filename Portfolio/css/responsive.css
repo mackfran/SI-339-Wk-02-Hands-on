@@ -8,6 +8,16 @@
 	nav ul li, .menu-icon{
 		border-top: 1px solid #DDDDDA;
 	}
+	.photo-cell {
+		display: inline-block;
+		width: 47%;
+	}
+	.main-content-home{
+		margin-top: 125px;
+	}
+	.home-flag img{
+		width: 30%;
+	}
 }
 
 @media only screen and (min-width: 1000px){
@@ -22,5 +32,15 @@
 	}
 	.logo {
 		float: left;
+	}
+	.photo-cell {
+		display: inline-block;
+		width: 30%;
+	}
+	.main-content-home{
+		margin-top: 90px;
+	}
+	.home-flag img{
+		width: 18%;
 	}
 }
