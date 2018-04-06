@@ -1,0 +1,274 @@
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+body{
+	vertical-align: middle;
+}
+html, body, header, footer{
+    background-color: #ECECEA;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer, .logo {
+	background-color: #14668D;
+	color: #DDDDDA; 
+}
+h2{
+	text-align: center;
+	color: #14668D;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+h1{
+	text-align: center;
+	color: #14668D;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+/*-----HEADER-----*/
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+/*-----NAVIGATION-----*/
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #14668D; 
+	margin: 0;
+	display: inline;
+}
+nav ul li, .menu-icon{
+	border-top: 1px solid #DDDDDA;
+}
+nav ul li a{
+	font-size: 1em;
+	color: #DDDDDA; 
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:hover, nav ul li a:focus{
+	color: #E3AD02;
+}
+.current-page{
+	color: #E3AD02;
+	font-weight: bold;
+}
+/*-----LOGO-----*/
+.logo{
+	background-color: #14668D; 
+	margin: 0;
+	text-align: left;
+	padding: .25em .75em;
+}
+.logo img{
+	height: 3em;
+}
+/*-----HOMEPAGE-----*/
+.main-content-home{
+	margin-top: 225px;
+}
+.home-flag{
+	vertical-align: center;
+	text-align: center;
+}
+#main-content-text{
+	display: inline-block;
+}
+.home-flag h1{
+	border: 3px solid #14668D;
+	padding: 6px;
+	width: 30%;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.home-flag p{
+	margin: auto;
+	text-align: center;
+	width: 65%;
+	color: #14668D;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+.home-flag img{
+	width: 50%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+
+.main-content-projects{
+	margin-top: 30px;
+	margin-bottom: 100px;
+	clear: both;
+	background-color: #14668D;
+}
+/*PROJECT GALLERY*/
+.projects{
+	display: block;
+	margin: auto;
+	max-width: 1200px;
+}
+.projects h2{
+	color: #DDDDDA;
+	padding-top: 1em;
+}
+.main-content-home .photo-cell{
+	margin-bottom: 2%;
+	margin-left: 2.5%;
+}
+.main-content-home .photo-cell img {
+	height: 250px;
+	width: 98%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+/*-----Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title-----*/
+.container{
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: 'Open Sans', sans-serif;
+	color: #f1f1f1;
+	width: 89.15%;
+	opacity: 0;
+	color: white;
+	font-size: 16px;
+	padding: 16px;
+	text-align: center;
+}
+.container:hover .overlay{
+	opacity: 1;
+}
+/*-----FEATURED VIDEO-----*/
+.main-content-projects{
+	margin-bottom: 3%;
+}
+.main-content-featured-video{
+	text-align: center;
+	margin-bottom: 15%;
+}
+/*-----FOOTER-----*/
+footer{
+	color: #F54320;
+	font-size: .85em;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+/*Social Media Icons*/
+.fab, .fas {
+    font-size: 2em;
+    padding: .5em .25em;
+    text-align: justify;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #DDDDDA;
+}
+.fab:hover, .fab:focus, .fas:hover, .fas:focus{
+	color: #E3AD02;
+}
+/*-----ABOUT-----*/
+.main-content-about{
+	display: block;
+	text-align: center;
+	margin-top: 245px;
+	margin-bottom: 80px;
+}
+.main-content-about p{
+	text-align: justify;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
+}
+.main-content-about .photo-cell{
+	margin-bottom: 2%;
+	margin-left: 8%;
+}
+.main-content-about .photo-cell img {
+	width: 90%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+/*-----RESUME-----*/
+.main-content-resume{
+	text-align: center;
+	margin-top: 5em;
+}
+.main-content-resume object{
+	display: inline-block;
+	margin-bottom: 5%;
+}
+/*-----PROJECTS-----*/
+.main-content-project-gallery{
+	margin-top: 5em;
+	margin-bottom: 13%;
+}
+.main-content-project-gallery p{
+	text-align: justify;
+	display: inline-block;
+	width: 55%;
+	font-size: 1em;
+}
+.main-content-project-gallery h2{
+	margin-top: 3em;
+	clear: both;
+}
+.main-content-project-gallery div{
+	text-align: center;
+}
+.main-content-project-gallery p{
+	width: 95%;
+}
+.main-content-project-gallery img{
+	width: 95%;
+}
+#exploration img{
+	width: 45%;
+	margin: 1.5%;
+}
+#manipulation img{
+	width: 65%;
+}
+#facebook img{
+	width: 40%;
+}
+#spotify img{
+	width: 95%;
+}
+/*-----CONTACT-----*/
+.contact{
+	/*-----Source: https://css-tricks.com/perfect-full-page-background-image/-----*/;
+	background: url('../images/bighouse.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+form{
+	background-color: #14668D;
+	color: #DDDDDA;
+	padding: 2%;
+	width: 50%;
+	border-radius: 2%;
+	margin-top: 200px;
+	margin-left: 23%;
+}
+form h2{
+	color: #DDDDDA;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+#message{
+	margin-top: 1em;
+}
