@@ -10,6 +10,8 @@ body{
 html, body, header, footer{
     background-color: #ECECEA;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header, footer, .logo {
 	background-color: #14668D;
@@ -30,6 +32,7 @@ header{
 	width: 100%;
 	position: fixed;
 	top: 0;
+	z-index: 99;
 }
 /*-----NAVIGATION-----*/
 nav ul{
@@ -116,15 +119,43 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:hover, nav ul li a:focus{
 	color: #DDDDDA;
 	padding-top: 1em;
 }
-.photo-cell{
+.main-content-home .photo-cell{
 	margin-bottom: 2%;
 	margin-left: 2.5%;
 }
-.photo-cell img {
+.main-content-home .photo-cell img {
 	height: 250px;
 	width: 98%;
   	display: block;
   	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+/*-----Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_title-----*/
+.container{
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	font-family: 'Open Sans', sans-serif;
+	color: #f1f1f1;
+	width: 89.15%;
+	opacity: 0;
+	color: white;
+	font-size: 16px;
+	padding: 16px;
+	text-align: center;
+}
+.container:hover .overlay{
+	opacity: 1;
+}
+/*-----FEATURED VIDEO-----*/
+.main-content-projects{
+	margin-bottom: 3%;
+}
+.main-content-featured-video{
+	text-align: center;
+	margin-bottom: 15%;
 }
 /*-----FOOTER-----*/
 footer{
@@ -147,6 +178,28 @@ footer{
 .fab:hover, .fab:focus, .fas:hover, .fas:focus{
 	color: #E3AD02;
 }
+/*-----ABOUT-----*/
+.main-content-about{
+	display: block;
+	text-align: center;
+	margin-top: 245px;
+	margin-bottom: 80px;
+}
+.main-content-about p{
+	text-align: justify;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
+}
+.main-content-about .photo-cell{
+	margin-bottom: 2%;
+	margin-left: 8%;
+}
+.main-content-about .photo-cell img {
+	width: 90%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
 /*-----RESUME-----*/
 .main-content-resume{
 	text-align: center;
@@ -155,4 +208,67 @@ footer{
 .main-content-resume object{
 	display: inline-block;
 	margin-bottom: 5%;
+}
+/*-----PROJECTS-----*/
+.main-content-project-gallery{
+	margin-top: 5em;
+	margin-bottom: 13%;
+}
+.main-content-project-gallery p{
+	text-align: justify;
+	display: inline-block;
+	width: 55%;
+	font-size: 1em;
+}
+.main-content-project-gallery h2{
+	margin-top: 3em;
+	clear: both;
+}
+.main-content-project-gallery div{
+	text-align: center;
+}
+.main-content-project-gallery p{
+	width: 95%;
+}
+.main-content-project-gallery img{
+	width: 95%;
+}
+#exploration img{
+	width: 45%;
+	margin: 1.5%;
+}
+#manipulation img{
+	width: 65%;
+}
+#facebook img{
+	width: 40%;
+}
+#spotify img{
+	width: 95%;
+}
+/*-----CONTACT-----*/
+.contact{
+	/*-----Source: https://css-tricks.com/perfect-full-page-background-image/-----*/;
+	background: url('../images/bighouse.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+form{
+	background-color: #14668D;
+	color: #DDDDDA;
+	padding: 2%;
+	width: 50%;
+	border-radius: 2%;
+	margin-top: 200px;
+	margin-left: 23%;
+}
+form h2{
+	color: #DDDDDA;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+#message{
+	margin-top: 1em;
 }

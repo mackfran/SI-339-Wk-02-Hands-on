@@ -8,15 +8,28 @@
 	nav ul li, .menu-icon{
 		border-top: 1px solid #DDDDDA;
 	}
-	.photo-cell {
+	.main-content-home .photo-cell {
 		display: inline-block;
 		width: 47%;
 	}
-	.main-content-home{
+	.main-content-about .photo-cell{
+		display: inline-block;
+		width: 32%;
+	}
+	.main-content-home, .main-content-about{
 		margin-top: 125px;
 	}
 	.home-flag img{
 		width: 30%;
+	}
+	form{
+		margin-top: 100px;
+	}
+	#spotify img{
+		width: 48%;
+	}
+	.main-content-featured-video{
+		margin-bottom: 9%;
 	}
 }
 
@@ -33,14 +46,34 @@
 	.logo {
 		float: left;
 	}
-	.photo-cell {
+	.main-content-about .photo-grid{
+		margin-left: 1.5em;
+	}
+	.main-content-home .photo-cell {
 		display: inline-block;
 		width: 30%;
 	}
-	.main-content-home{
+	.main-content-about .photo-cell{
+		display: inline-block;
+		width: 19%;
+		margin: 0;
+	}
+	.main-content-home, .main-content-about{
 		margin-top: 90px;
 	}
 	.home-flag img{
 		width: 18%;
+	}
+	form{
+		margin-top: 60px;
+	}
+	#spotify img{
+		width: 32%;
+	}
+	.main-content-project-gallery{
+		margin-bottom: 7%;
+	}
+	.main-content-featured-video{
+		margin-bottom: 5%;
 	}
 }
