@@ -1,0 +1,40 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<title>Mackenzie Francisco</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<style>
+    #emailfield { display: none; }
+    </style>
+    
+    <script type="text/javascript">
+	function hideImage(){
+    	document.getElementById('img1').style.display='none';
+    	document.getElementById('img2').style.setAttribute("align", "center");
+	} 
+	function showImage(){
+    	document.getElementById('img1').style.display='';
+	} 
+    </script>
+</head>
+<body>
+	<header>
+		<h1>Mackenzie Francisco</h1>
+	</header>
+	<div class="photo-grid">
+		<div class="photo-cell">
+			<img id="img1" class="resp-img" src="images/examPic.JPG" alt="Colleen with Friends">
+		</div>
+		<div class="photo-cell ">
+			<img id="img2" class="resp-img" src="images/UMSI-logo.jpg" alt="UMSI Logo">
+		</div>
+	</div>
+	<button id="hideImage" onclick="hideImage()">Hide Image</button>
+	<button id="showImage" onclick="showImage()">Show Image</button>
+</body>
+</html>
